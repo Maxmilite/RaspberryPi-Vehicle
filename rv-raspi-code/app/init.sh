@@ -13,7 +13,6 @@ wget https://hub.nuaa.cf/WiringPi/WiringPi/releases/download/2.61-1/wiringpi-2.6
 chmod +x wiringpi-2.61-1-armhf.deb
 sudo dpkg -i wiringpi-2.61-1-armhf.deb
 rm wiringpi-2.61-1-armhf.deb
-sudo raspi-config nonint do_vnc 1
 sudo raspi-config nonint do_legacy 1
 sudo sed -i 's/daemon off/daemon on/g' /etc/motion/motion.conf
 sudo sed -i 's/width 640/width 1280/g' /etc/motion/motion.conf
